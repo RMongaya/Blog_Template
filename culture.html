@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Korean Heritage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6c6a6a;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-image: url('cu2.jfif');
+            background-size: cover;
+            background-position: center center; /* Center the background image horizontally and vertically */
+            background-attachment: fixed; /* Keep the background fixed while scrolling */
+            color: #000000;
+            text-align: center;
+            padding: 6em 1em;
+            background-blend-mode: overlay;
+            position: relative;
+}
+
+
+        header h1 {
+            font-size: 3em;
+            margin: 10px 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            letter-spacing: 1px;
+            color: rgb(255, 255, 255);
+        }
+
+        nav {
+            background-color: #3498db;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #2980b9;
+            transition: background-color 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background-color: #000000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        section h2 {
+            color: #5087bf;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+         }
+
+        .card:hover {
+            transform: scale(1.05);
+         }
+
+         .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+
+        .card-content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 0em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .wel{
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DISCOVER KOREAN CULTURE</h1>
+    </header>
+
+    <nav>
+        <a href="#culture"><i class="fas fa-users icon"></i> Korean Culture</a>
+        <a href="#arts"><i class="fas fa-paint-brush icon"></i> Korean Arts</a>
+    </nav>
+
+    <section id="culture">
+        <h2>Korean Culture</h2>
+        <p>Explore the rich heritage and traditions of South Korea.</p>
+        <div class="card-container">
+            <div class="card">
+                <img src="tra1.jfif" alt="Traditional Dance">
+                <div class="card-content">
+                    <h3>Traditional Dance</h3>
+                    <p class="wel">Discover the beauty of traditional Korean dance.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="hanbok.jfif" alt="Hanbok">
+                <div class="card-content">
+                    <h3>Hanbok</h3>
+                    <p class="wel">Learn about Hanbok, the traditional Korean clothing.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tea.jfif" alt="Tea Ceremony">
+                <div class="card-content">
+                    <h3>Tea Ceremony</h3>
+                    <p class="wel">Experience the serenity of a traditional Korean tea ceremony.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="arts">
+        <h2>Korean Arts</h2>
+        <p>Immerse yourself in the diverse world of Korean arts.</p>
+        <div class="card-container">
+            <div class="card">
+                <img src="paint.jfif" alt="Traditional Painting">
+                <div class="card-content">
+                    <h3>Traditional Painting</h3>
+                    <p class="wel">Explore the vibrant colors and symbolism of Korean Minhwa.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cera.jfif" alt="Ceramics">
+                <div class="card-content">
+                    <h3>Ceramics</h3>
+                    <p class="wel">Admire the craftsmanship of Korean ceramics, including celadon pottery.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cinema.jfif" alt="Korean Cinema">
+                <div class="card-content">
+                    <h3>Korean Cinema</h3>
+                    <p class="wel">Discover the global acclaim of Korean cinema and iconic directors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Discover Korean Culture</p>
+    </footer>
+
+</body>
+</html>
+
+
+    
+
+   

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious South Korean Cuisine</title>
+    <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right bottom, #ffecd2, #fcb69f);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .food-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .food-item {
+            width: 300px;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .food-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .food-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .food-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 20px;
+        }
+
+        .food-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay h3,
+        .overlay p {
+            margin: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .food-item {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .food-item {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>DELICIOUS SOUTH KOREAN CUISINE</h2>
+        <div class="food-items">
+            <div class="food-item">
+                <img src="kimchi.jfif" alt="Kimchi">
+                <div class="overlay">
+                    <h3>Kimchi</h3>
+                    <p>A traditional fermented Korean side dish made of seasoned vegetables.</p>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <img src="bibimbap.jfif" alt="Bibimbap">
+                <div class="overlay">
+                    <h3>Bibimbap</h3>
+                    <p>A mixed rice dish topped with vegetables, meat, and a spicy gochujang sauce.</p>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <img src="bulgogi.jfif" alt="Bulgogi">
+                <div class="overlay">
+                    <h3>Bulgogi</h3>
+                    <p>Marinated and grilled beef, typically served with rice or wrapped in lettuce leaves.</p>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <img src="tteokbokki.jfif" alt="Tteokbokki">
+                <div class="overlay">
+                    <h3>Tteokbokki</h3>
+                    <p>Spicy and sweet rice cakes, a popular street food in South Korea.</p>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <img src="samgyeop.jfif" alt="Samgyeopsal">
+                <div class="overlay">
+                    <h3>Samgyeopsal</h3>
+                    <p>Grilled pork belly, often served with garlic, onions, and dipping sauces.</p>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <img src="sundubo.jfif" alt="Sundubu Jjigae">
+                <div class="overlay">
+                    <h3>Sundubu Jjigae</h3>
+                    <p>A hot and spicy stew featuring uncurdled tofu, vegetables, sometimes meat, and gochujang (chili paste).</p>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <img src="japchae.jfif" alt="Japchae">
+                <div class="overlay">
+                    <h3>Japchae</h3>
+                    <p>A savory and slightly sweet dish of stir-fried glass noodles and vegetables.</p>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <img src="kimbap.jfif" alt="Kimbap">
+                <div class="overlay">
+                    <h3>Kimbap</h3>
+                    <p>A Korean-style sushi roll made with steamed white rice and various ingredients, rolled in seaweed.</p>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <img src="jeon.jfif" alt="Jeon">
+                <div class="overlay">
+                    <h3>Jeon</h3>
+                    <p>Korean-style pancakes made with various ingredients such as vegetables, seafood, or meat.</p>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <img src="banchan.jfif" alt="Banchan">
+                <div class="overlay">
+                    <h3>Banchan</h3>
+                    <p>Assorted side dishes served along with cooked rice in Korean cuisine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
